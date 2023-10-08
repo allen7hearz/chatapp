@@ -6,8 +6,25 @@
     <title>Chat Application</title>
 </head>
 <body>
-    <h1>Welcome to the Chat App!</h1>
-    <a href="/login"><button>Login</button></a>
-    <a href="/signup"><button>Sign Up</button></a>
+    <div class="box">
+        <h1 class="header">Welcome to the Chat App!</h1>
+
+        <button class="signup" id="signupButton">Sign Up</button>
+        <script>
+        document.getElementById('signupButton').addEventListener('click', function() {
+            window.location.href = '/signup';
+        });
+        </script>
+
+        <button class="login" id="loginButton">Log In</button>
+        <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = '/login'; // Replace '/login' with the URL you want to redirect to for login
+        });
+        </script>
+    </div>
+
+
+
 </body>
 </html>
