@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Page</title>
+    <!-- Include CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <!-- Include JS file -->
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Chat Room</h1>
+        <a href="/">Logout</a> <!-- Replace "/" with your logout route -->
+    </div>
+    <div id="messages" class="message-container">
+        <!-- Messages will be dynamically inserted here -->
+    </div>
+    <div class="input-container">
+        <input type="text" id="message-input" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+</html>
