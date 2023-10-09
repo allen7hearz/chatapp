@@ -1,0 +1,114 @@
+/* chat.css */
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    border-radius: 10px; /* Rounded corners for the entire page */
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    background-color: #128c7e; /* WhatsApp green color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    margin-bottom: 10px; /* Add a gap between the header and message container */
+}
+
+.header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header a:hover {
+    color: #128c7e; /* WhatsApp green color */
+}
+
+.message-container {
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #e8f6ff; /* Light blue background */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add a gap between messages */
+}
+
+.message {
+    background-color: #dcf8c6; /* Message bubble color */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%; /* Limit message width */
+}
+
+.message.other {
+    background-color: #ece5dd; /* Message bubble color for others */
+}
+
+.input-container {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    margin-top: 10px; /* Add a gap between the message container and input container */
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2; /* Light gray input background */
+    color: #333;
+    font-size: 16px;
+    outline: none;
+}
+
+#message-input::placeholder {
+    color: #999;
+}
+
+button {
+    background-color: #128c7e; /* WhatsApp green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #075e54; /* Slightly darker green on hover */
+}
