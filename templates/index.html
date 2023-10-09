@@ -13,9 +13,19 @@
     <div class="box">
         <h1 class="header">Welcome to the Chat App!</h1>
 
-        <button class="signup"><a href="/signup">Sign Up</a></button>
+        <button class="signup" id="signupButton">Sign Up</button>
+        <script>
+        document.getElementById('signupButton').addEventListener('click', function() {
+            window.location.href = '/signup';
+        });
+        </script>
 
-        <button class="login"><a href="/login">Login</a></button>
+        <button class="login" id="loginButton">Log In</button>
+        <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = '/login';
+        });
+        </script>
     </div>
 
 

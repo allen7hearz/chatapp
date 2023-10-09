@@ -29,12 +29,12 @@ def signup():
     users = load_users()
     # Check if username already exists
     if username in users:
-        return "Username already exists. Please choose a different username."
+        return render_template('signup.html', error="Username already exists.")
     # Add new user to the dictionary
     users[username] = password
     # Save the updated users back to the JSON file
     save_users(users)
-    return "Sign Up successful"
+    return redirect(url_for('login', username=username))
 
 @app.route('/login')
 def login_page():
@@ -50,7 +50,7 @@ def login():
     if username in users and users[username] == password:
         return f"Welcome, {username}!"
     else:
-        return "Invalid username or password. Please try again." 
+        return render_template('login.html', error="Invalid username or password. Please try again.") 
        
 if __name__ == '__main__':
     app.run(debug=True)
