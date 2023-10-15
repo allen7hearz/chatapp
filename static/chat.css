@@ -8,6 +8,7 @@ body {
     padding: 0;
     color: #333;
     border-radius: 10px; /* Rounded corners for the entire page */
+    
 }
 
 .chat-container {
@@ -15,7 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 95vh;
 }
 
 .header {

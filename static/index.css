@@ -14,6 +14,7 @@
     padding-right: 18px;
     margin-bottom: 5px;
     box-shadow: 2px 3px rgba(5, 5, 5, 30%);
+    font-size: 40px;
 }
 
 .signup:hover{
@@ -62,7 +63,6 @@ a{
     width: 100%;
     height: 100%;
     text-decoration: none;
-
 }
 
 
@@ -73,9 +73,8 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 12.5%;
-    
+    align-items: center;
 }
 
 .box{
@@ -86,5 +85,6 @@ body{
     border-radius: 10px;
     background-color:rgb(35, 45, 63);
     box-shadow: 5px 10px rgba(5, 5, 5, 40%);
+    font-size: 30px;
 }
 
