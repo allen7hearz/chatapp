@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Welcome to ChatApp, a delightful chat application built using Flask. This app allows users to sign up, log in, and engage in real-time conversations with their friends and colleagues.
+  Welcome to ChatApp, a delightful chat application built using Flask. This app allows users to sign up, log in, and engage in real-time messaging.
 </p>
 
 ## Features
