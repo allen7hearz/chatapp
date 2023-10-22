@@ -4,11 +4,10 @@ body {
     background-color: #f2f2f2;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 10px !important;
+    padding: 0 !important;
     color: #333;
     border-radius: 10px; /* Rounded corners for the entire page */
-    
 }
 
 .chat-container {
@@ -111,6 +110,7 @@ button {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-left: 10px;
 }
 
 button:hover {
