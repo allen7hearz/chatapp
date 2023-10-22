@@ -26,7 +26,7 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ChatApp.git
+git clone https://github.com/allen7hearz/chatapp.git
 ```
 2. Install the requirements.txt
 ```bash
